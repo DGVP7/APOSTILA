@@ -1,0 +1,347 @@
+/* Estilos gerais */
+body {
+  font-family: Arial, sans-serif;
+  background-color: black;
+  color: #d3d3d3;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 20px;
+  color: #ffffff;
+}
+
+form {
+  max-width: 900px;
+  width: 90%;
+  margin: 20px auto;
+  background-color: #333;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.row div {
+  flex: 1;
+  margin: 0 5px;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="number"],
+select {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  background-color: #add8e6;
+  color: black;
+  font-size: 16px;
+}
+
+fieldset {
+  border: 1px solid #ccc;
+  padding: 15px;
+  border-radius: 10px;
+  margin-top: 20px;
+  background-color: #222;
+}
+
+legend {
+  padding: 0 10px;
+  color: #ffffff;
+}
+
+.averbacao-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.averbacao-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  flex-basis: calc(33.3333% - 10px);
+}
+
+.averbacao-row label {
+  flex: 1;
+  margin-right: 10px;
+}
+
+.averbacao-row input[type="number"] {
+  width: 65px;
+  margin-right: 5px;
+  font-size: 11px; /* Ajuste o tamanho conforme necessário */
+}
+
+#resumoContainer {
+  width: 900px;
+  margin-top: 20px;
+}
+
+#resumo {
+  background-color: white;
+  color: black;
+  padding: 10px;
+  border-radius: 5px;
+  height: 350px;
+  width: 850px;
+  overflow-y: auto;
+  border: 1px solid #ccc;
+  line-height: 1.6;
+}
+
+.button-row {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 20px;
+}
+
+.button-row button {
+  margin-right: 10px;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+  background: linear-gradient(to right, #555, #777);
+  color: white;
+  transition: background 0.3s ease;
+}
+
+.button-row button:hover {
+  background: linear-gradient(to right, #666, #888);
+}
+
+/* Estilo para o <dialog> */
+dialog {
+  display: none;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 9999;
+}
+
+dialog[open] {
+  opacity: 1;
+  display: block;
+}
+
+.dialog-content {
+  background-color: #fefefe;
+  padding: 20px;
+  border-radius: 10px;
+  z-index: 10001;
+}
+
+.close {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  color: #aaa;
+  font-size: 28px;
+  font-weight: bold;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+
+.info p {
+  margin: 0;
+  font-size: 16px;
+  color: black;
+}
+
+h2,
+h3 {
+  text-align: center;
+  color: #333;
+}
+
+/* Estilos para garantir espaçamento e layout */
+.row {
+  margin-bottom: 15px;
+}
+
+.row div {
+  margin: 0 10px;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="number"],
+select {
+  margin-top: 10px;
+}
+
+fieldset {
+  margin-bottom: 20px;
+}
+
+.button-row button {
+  margin-right: 20px;
+}
+
+.button-row {
+  justify-content: center;
+}
+
+/* Ajuste para tamanho e alinhamento */
+button,
+select {
+  font-size: 16px;
+}
+
+.dialog-content p {
+  font-size: 16px;
+}
+
+dialog#apostilaModal {
+  width: 80vw; /* 80% da largura da viewport */
+  height: 250vh; /* 90% da altura da viewport */
+  width: 210mm;
+  height: 500mm;
+  border: none;
+  padding: 0;
+  position: absolute;
+  top: 10%; /* Ajuste a posição top para evitar que ultrapasse o topo da tela */
+  left: 50%;
+  transform: translate(-50%, 0);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  overflow: auto;
+  background-color: #fff; /* Fundo branco */
+}
+
+.dialog-content {
+  padding: 10mm; /* Altere este valor para ajustar o espaçamento dentro da modal */
+  box-sizing: border-box;
+  background-color: #fff;
+  border-radius: 5px;
+  position: relative;
+  height: 130%;
+}
+
+.dialog-content h2 {
+  margin-top: -10; /* Reduza a margem superior para aproximar o texto do topo da modal */
+  padding-top: -10; /* Reduza o padding superior para aproximar o texto do topo da modal */
+}
+
+.dialog-content .close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  left: 10px;
+  font-size: 24px;
+  cursor: pointer;
+  color: #000;
+}
+
+/* Estilos específicos para a linha de pecúnia */
+.pecunia-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.pecunia-row div {
+  flex: 1;
+  margin: 0 6px;
+}
+
+.pecunia-row input[type="number"],
+.pecunia-row input[type="text"],
+.pecunia-row select {
+  width: calc(100% - 10px);
+  padding: 8px;
+  margin-top: 5px;
+  margin-bottom: 7px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  background-color: #add8e6;
+  color: black;
+  font-size: 16px;
+}
+
+.pecunia-row input[disabled] {
+  background-color: transparent; /* Torna o fundo transparente */
+  color: #666; /* Texto cinza escuro */
+}
+
+.percentual-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.percentual-input {
+  flex: 1;
+  position: relative;
+}
+
+.percentual-input input[type="number"] {
+  width: 100%;
+  padding-right: 24px; /* Espaço para o símbolo % */
+}
+
+.percent-symbol {
+  position: absolute;
+  right: 10px; /* Espaço entre o número e o símbolo % */
+  color: black;
+  font-size: 16px;
+}
+
+/* Estilos específicos para a linha de Raio-x */
+.Raiox-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.Raiox-row div {
+  flex: 1;
+  margin: 0 6px;
+}
+
+.Raiox-row select,
+.Raiox-row input[type="number"] {
+  width: calc(100% - 10px);
+  padding: 8px;
+  margin-top: 10px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  background-color: #add8e6;
+  color: black;
+  font-size: 16px;
+}
+
+.Raiox-row select[disabled],
+.Raiox-row input[disabled] {
+  background-color: transparent; /* Torna o fundo transparente */
+  color: #666; /* Texto cinza escuro */
+}

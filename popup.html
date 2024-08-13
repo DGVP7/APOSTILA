@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Folha A4</title>
+    <style>
+        body::before {
+            content: "";
+            position: absolute;
+            top: 9rem;
+            left: 1.1rem;
+            width: 95%;
+            height: 80%;
+            background-image: url('https://imgur.com/AojGEJ5.png');
+            background-size: cover;
+            background-position: center;
+            opacity: 0.1;
+            z-index: -1;
+        }
+
+        body {
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            height: 1200px;
+            width: calc(880px - 40px);
+            background: #f0f0f0;
+            overflow: auto;
+            box-sizing: border-box;
+        }
+        .faixa {
+            width: 100%;
+            background-color: #800000;
+            color: white;
+            text-align: center;
+            padding: 5px 0;
+            position: relative;
+        }
+        .faixa img {
+            height: 20px;
+            margin-left: 10px;
+            vertical-align: middle;
+        }
+        .banner-image {
+            position: absolute;
+            top: 30px;
+            left: 35px;
+            width: 540px;
+            height: auto;
+        }
+        .row {
+            display: flex;
+            width: 100%;
+            margin-bottom: 0px;
+        }
+        .row fieldset {
+            margin: 1px;
+        }
+        .row fieldset:last-child {
+            margin-right: 0;
+        }
+        fieldset {
+            border: 2px solid #000;
+            border-radius: 0.3rem;
+            margin-bottom: 0rem;
+            padding: 1rem;
+            overflow: hidden;
+            box-sizing: border-box;
+        }
+        #fieldset1 {
+            background-color: #add8e6;
+            width: 100%;
+            height: 70px;
+            text-align: center;
+            font-weight: bold;
+            line-height: center;
+            padding: 0.6rem;
+        }
+        #inatividade-value {
+            font-size: 2.5rem;
+            max-width: 100%;
+            white-space: nowrap;
+        }
+        #fieldset2 {
+            margin-left: auto;
+            width: 30%;
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #fieldset3 {
+            width: 100%;
+            height: 65px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            padding: 3px;
+            padding-left: 20px;
+        }
+        #vantagens-inatividade {
+            font-size: 0.9rem;
+            font-weight: normal;
+            margin-bottom: 1px;
+        }
+        .referente-ao {
+            font-size: 2vw;
+            font-weight: bold;
+            margin-bottom: 1px;
+            flex-grow: 1;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        .autuacao-value {
+            font-size: 1.5rem;
+        }
+        #fieldset4 {
+            width: 100%;
+            height: 40px;
+            padding: 10px;
+        }
+        #fieldset5 {
+            width: 50%;
+            height: 300px;
+            padding: 10px;
+        }
+        #fieldset6 {
+            width: 50%;
+            height: 300px;
+            padding: 10px;    
+        }
+        #fieldset6 .linha-tempo {
+            color: black;
+        }
+        #fieldset7 {
+            width: 100%;
+            height: 100px;
+            padding: 10px;
+        }
+        #fieldset8 {
+            width: 50%;
+            height: 100px;
+            padding: 10px;
+        }
+        #fieldset9 {
+            width: 50%;
+            height: 100px;
+            padding: 10px;
+        }
+        legend {
+            color: #757070;
+            font-size: 0.8rem;
+            font-family: 'Lucida Console', monospace;
+            font-weight: bold;
+            text-align: left;
+        }
+        .autuacao-value {
+            font-size: 1.1rem;
+            font-weight: bold;
+            text-align: center;
+        }
+        .tabela-calculos {
+            display: table;
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .linha {
+            display: table-row;
+        }
+        .coluna-titulo {
+            display: table-cell;
+            padding: 5px;
+            text-align: left;
+            font-weight: bold;
+            width: 70%;
+            border: none; /* Remove a borda da coluna título */
+        }
+        .coluna {
+            display: table-cell;
+            padding: 5px;
+            text-align: center;
+            border: none;
+            width: 15%;
+        }
+        .linha-tempo {
+            display: table-row;
+        }
+
+        .linha-tempo .coluna-titulo,
+        .linha-tempo .coluna {
+            border: none; /* Remove as bordas das células */
+        }
+
+        .tabela-complementar {
+            display: table;
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        #fieldset6 .linha-tempo {
+            color: black;
+        }
+
+    </style>
+</head>
+<body>
+<fieldset id="fieldset1">
+    <div id="inatividade-value" class="inatividade-value"></div>
+</fieldset>
+<div class="faixa">
+    CORPO DE BOMBEIROS MILITAR DO ESTADO DO RIO DE JANEIRO
+</div>
+<img src="https://imgur.com/lrcsLhG.png" class="banner-image" alt="Banner DGVP">
+<div class="row">            
+    <fieldset id="fieldset2">
+        <legend>Autuação</legend>                
+        <div id="resumo2" class="autuacao-value"></div>
+    </fieldset>
+</div>
+<fieldset id="fieldset3">
+    <legend>informações</legend>
+    <div id="vantagens-inatividade"></div>
+    <div id="referente-ao" class="referente-ao"></div>
+    <div id="resumo"></div>
+</fieldset>
+<div class="row">
+    <fieldset id="fieldset5">
+        <legend>informações temporais</legend>
+        <div id="resumo5">
+            <div class="tabela-calculos">
+                <div class="linha">
+                    <div class="coluna-titulo"></div>
+                    <div class="coluna">Anos</div>
+                    <div class="coluna">Meses</div>
+                    <div class="coluna">Dias</div>
+                </div>
+            </div>
+        </div>
+    </fieldset>
+    <fieldset id="fieldset6">
+        <legend>informações complementares</legend>
+        <div id="resumo6">
+            <div class="tabela-complementar"></div>
+        </div>
+    </fieldset>
+</div>
+<fieldset id="fieldset4">
+    <legend>Campo 4</legend>
+    <div id="resumo4"></div>
+</fieldset>
+<fieldset id="fieldset7">
+    <legend>Campo 7</legend>
+    <div id="resumo7"></div>
+</fieldset>
+<div class="row">
+    <fieldset id="fieldset8">
+        <legend>Campo 8</legend>
+        <div id="resumo8"></div>
+    </fieldset>
+    <fieldset id="fieldset9">
+        <legend>Campo 9</legend>
+        <div id="resumo9"></div>
+    </fieldset>
+</div>
+<script src="popup.js"></script>
+</body>
+</html>

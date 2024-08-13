@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema DGVP de Cálculos</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .faixa {
+            width: 100%;
+            background-color: #800000; /* Cor vermelha da faixa */
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: relative; /* Para posicionar os ícones */
+        }
+        .faixa img {
+            height: 30px; /* Ajuste o tamanho dos ícones conforme necessário */
+            margin-left: 10px;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body>
+    <div class="faixa">
+        CORPO DE BOMBEIROS MILITAR DO ESTADO DO RIO DE JANEIRO
+        <a href="https://intranet.cbmerj.rj.gov.br/" target="_blank"><img src="https://imgur.com/9COR3yW.png" alt="LOGO CBMERJ"></a>
+        <a href="https://www.cbmerj.rj.gov.br/dgp/sistema/consulta.php" target="_blank"><img src="https://imgur.com/J6Yq5WA.png" alt="LOGO DGP"></a>
+        <a href="https://www.cbmerj.rj.gov.br/dip/sistema/" target="_blank"><img src="https://imgur.com/J6Yq5WA.png" alt="LOGO DGVP"></a>
+        <a href="https://www.tcerj.tc.br/etcerj/Home/Index?sicodiredirect=False" target="_blank"><img src="https://imgur.com/IJnACd4.png" alt="LOGO ETCERJ"></a>
+        <a href="https://sei.rj.gov.br/sip/login.php?sigla_orgao_sistema=ERJ&sigla_sistema=SEI&infra_url=L3NlaS8=" target="_blank"><img src="https://imgur.com/JSWexWR.png" alt="LOGO SEI"></a>
+        <a href="https://www.sigrh.rj.gov.br" target="_blank"><img src="https://imgur.com/2FaYQpw.png" alt="LOGO SIGRH"></a>
+        <a href="https://www.tcerj.tc.br/consulta-processo/Processo" target="_blank"><img src="https://imgur.com/ponvoZ5.png" alt="LOGO TCE RJ"></a>
+    </div>
+    <h1>Sistema DGVP de cálculos <br> Apostila de fixação de proventos</h1>
+    <form id="soldoForm">
+        <div class="row">
+            <div>
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" required>
+            </div>
+            <div>
+                <label for="rgMilitar">RG Militar:</label>
+                <input type="text" id="rgMilitar" required>
+            </div>
+            <div>
+                <label for="gradPosto">Grad/Posto:</label>
+                <select id="gradPosto" required>
+                    <option value="Soldado BM">Soldado BM</option>
+                    <option value="Cabo BM">Cabo BM</option>
+                    <option value="3º Sargento BM">3º Sargento BM</option>
+                    <option value="2º Sargento BM">2º Sargento BM</option>
+                    <option value="1º Sargento BM">1º Sargento BM</option>
+                    <option value="Subtenente BM">Subtenente BM</option>
+                    <option value="2º Tenente BM">2º Tenente BM</option>
+                    <option value="1º Tenente BM">1º Tenente BM</option>
+                    <option value="Capitão BM">Capitão BM</option>
+                    <option value="Major BM">Major BM</option>
+                    <option value="Ten. Cel. BM">Ten. Cel. BM</option>
+                    <option value="Coronel BM">Coronel BM</option>
+                </select>
+            </div>
+        </div>
+        <div class="row">
+            <div>
+                <label for="inatividade">Inatividade:</label>
+                <select id="inatividade" required>
+                    <option value="RESERVA REMUNERADA">RESERVA REMUNERADA</option>
+                    <option value="RESERVA REMUNERADA EX-OFFÍCIO">RESERVA REMUNERADA EX-OFFÍCIO</option>
+                    <option value="REFORMA">REFORMA</option>
+                    <option value="COMPULSÓRIA VOLUNTÁRIA">COMPULSÓRIA VOLUNTÁRIA</option>
+                    <option value="RR (LEI 9537/21)">RR (LEI 9537/21)</option>
+                </select>
+            </div>
+            <div>
+                <label for="dataExclusao">Data de Exclusão:</label>
+                <input type="date" id="dataExclusao" required>
+            </div>
+            <div>
+                <label for="dataInclusao">Data de Inclusão:</label>
+                <input type="date" id="dataInclusao" required>
+            </div>
+        </div>
+        <div class="row">
+            <div>
+                <label for="reforma">Reforma:</label>
+                <select id="reforma">
+                    <option value="Art. 107, I, II, III, IV.">Art. 107, I, II, III, IV.</option>
+                    <option value="Art. 107, V.">Art. 107, V.</option>
+                    <option value="Art. 107, V c/ Art. 110, I">Art. 107, V c/ Art. 110, I</option>
+                </select>
+            </div>
+            <div>
+                <label for="exOficio">Ex-Ofício:</label>
+                <select id="exOficio">
+                    <option value="por Idade">por Idade</option>
+                    <option value="Cargo Eletivo">Cargo Eletivo</option>
+                </select>
+            </div>
+            <div>
+                <label for="ghp">GHP:</label>
+                <select id="ghp">
+                    <option value="CSC">CSC</option>
+                    <option value="Formação SGT/Oficial">Formação SGT/Oficial</option>
+                    <option value="CAS ou equivalente">CAS ou equivalente</option>
+                    <option value="Curso de SD/CB">Curso de SD/CB</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- Adicione os novos campos Pecúnia aqui -->
+        <div class="pecunia-row">
+            <div>
+              <label for="pecunia">Pecúnia:</label>
+              <select id="pecunia" class="pecunia">
+                <option value="nao">Não</option>
+                <option value="sim">Sim</option>
+              </select>
+            </div>
+            <div>
+                <label for="percentual">Percentual:</label>
+                <input type="number" id="percentual" name="percentual" disabled>
+              </div>
+              <div>
+                <label for="processoPecunia">Processo:</label>
+                <input type="text" id="processoPecunia" name="processoPecunia" disabled>
+              </div>
+              <div>
+                <label for="numeroProcesso">Nº Processo:</label>
+                <input type="text" id="numeroProcesso" name="numeroProcesso">
+              </div>
+            </div>
+            
+            <div class="Raiox-row">
+            <div>
+                <label for="Raiox">Raio-x:</label>
+              <select id="Raiox" class="Raiox">
+                <option value="nao">Não</option>
+                <option value="sim">Sim</option>
+              </select>
+              </div>
+              <div>
+                <label for="gradPostoRaiox">Grad/Posto:</label>
+                <select id="gradPostoRaiox" disabled>
+                    <option value="Soldado BM">Soldado BM</option>
+                    <option value="Cabo BM">Cabo BM</option>
+                    <option value="3º Sargento BM">3º Sargento BM</option>
+                    <option value="2º Sargento BM">2º Sargento BM</option>
+                    <option value="1º Sargento BM">1º Sargento BM</option>
+                    <option value="Subtenente BM">Subtenente BM</option>
+                    <option value="2º Tenente BM">2º Tenente BM</option>
+                    <option value="1º Tenente BM">1º Tenente BM</option>
+                    <option value="Capitão BM">Capitão BM</option>
+                    <option value="Major BM">Major BM</option>
+                    <option value="Ten. Cel. BM">Ten. Cel. BM</option>
+                    <option value="Coronel BM">Coronel BM</option>
+                </select>
+            </div>
+            <div>
+                <label for="TempoRaiox">Operação:</label>
+                <input type="number" id="TempoRaiox" name="TempoRaiox" disabled>
+              </div>
+
+              <div>
+                <label for="GRET">Gret:</label>
+                <input type="number" id="GRET" name="GRET">
+              </div>
+              <div>
+                <label for="IAI">Iai:</label>
+                <input type="number" id="IAI" name="IAI">
+              </div>
+              <div>
+                <label for="DOERJ">Doerj:</label>
+                <input type="date" id="DOERJ" name="DOERJ">
+              </div>
+            </div>
+        <fieldset>
+            <legend>Averbações</legend>
+            <div class="averbacao-container">
+                <div class="averbacao-row">
+                    <label for="anosServicoMilitar">Tempo de Serviço Militar:</label>
+                    <input type="number" id="anosServicoMilitar" placeholder="Anos">
+                    <input type="number" id="mesesServicoMilitar" placeholder="Meses">
+                    <input type="number" id="diasServicoMilitar" placeholder="Dias">
+                </div>
+                <div class="averbacao-row">
+                    <label for="anosServicoEstatutario">Tempo de Serviço Estatutário:</label>
+                    <input type="number" id="anosServicoEstatutario" placeholder="Anos">
+                    <input type="number" id="mesesServicoEstatutario" placeholder="Meses">
+                    <input type="number" id="diasServicoEstatutario" placeholder="Dias">
+                </div>
+                <div class="averbacao-row">
+                    <label for="anosLicencaEspecial">Licença Especial:</label>
+                    <input type="number" id="anosLicencaEspecial" placeholder="Anos">
+                    <input type="number" id="mesesLicencaEspecial" placeholder="Meses">
+                    <input type="number" id="diasLicencaEspecial" placeholder="Dias">
+                </div>
+                <div class="averbacao-row">
+                    <label for="anosFerias">Férias:</label>
+                    <input type="number" id="anosFerias" placeholder="Anos">
+                    <input type="number" id="mesesFerias" placeholder="Meses">
+                    <input type="number" id="diasFerias" placeholder="Dias">
+                </div>
+                <div class="averbacao-row">
+                    <label for="anosTsQos">T.S Q.O.S:</label>
+                    <input type="number" id="anosTsQos" placeholder="Anos">
+                    <input type="number" id="mesesTsQos" placeholder="Meses">
+                    <input type="number" id="diasTsQos" placeholder="Dias">
+                </div>
+                <div class="averbacao-row">
+                    <label for="anosInss">INSS:</label>
+                    <input type="number" id="anosInss" placeholder="Anos">
+                    <input type="number" id="mesesInss" placeholder="Meses">
+                    <input type="number" id="diasInss" placeholder="Dias">
+                </div>
+            </div>
+        </fieldset>
+        <div id="resumoContainer">
+            <fieldset>
+                <legend>Resumo</legend>
+                <div id="resumo"></div>
+            </fieldset>
+        </div>
+        <div class="button-row">
+            <button type="button" id="gerarResumo">Gerar Resumo</button>
+            <button type="button" id="openNewWindow">Gerar Apostila</button>
+        </div>
+    </form>
+
+    <script type="module" src="formUtils.js"></script>
+    <script type="module" src="calculoTempoServico.js"></script>
+    <script type="module" src="dataAquisicao.js"></script>
+    <script type="module" src="calculoPedagio.js"></script>
+    <script type="module" src="calculoProventos.js"></script>
+    <script type="module" src="gerarResumo.js"></script>
+    <script type="module" src="soldo.js"></script>
+   
+    <script>
+        document.getElementById("openNewWindow").addEventListener("click", () => {
+            const newWindow = window.open("popup.html", "_blank", "width=900,height=1200,scrollbars=yes,resizable=yes");
+            newWindow.onload = function() {
+                newWindow.document.body.style.overflow = 'auto'; // Garante que o conteúdo seja rolável
+            };
+        });
+
+           </script>
+    
+        <script>
+        document.getElementById("pecunia").addEventListener("change", function () {
+          const isPecunia = this.value === "sim";
+          const percentualField = document.getElementById("percentual");
+          const processoPecuniaField = document.getElementById("processoPecunia");
+      
+          if (isPecunia) {
+            percentualField.disabled = false;
+            percentualField.style.backgroundColor = "#add8e6"; // Mesma cor dos demais campos
+            percentualField.style.color = "black";
+            processoPecuniaField.disabled = false;
+            processoPecuniaField.style.backgroundColor = "#add8e6"; // Mesma cor dos demais campos
+            processoPecuniaField.style.color = "black";
+          } else {
+            percentualField.disabled = true;
+            percentualField.style.backgroundColor = "transparent"; // Torna o fundo transparente
+            percentualField.style.color = "#666"; // Texto cinza escuro
+            processoPecuniaField.disabled = true;
+            processoPecuniaField.style.backgroundColor = "transparent"; // Torna o fundo transparente
+            processoPecuniaField.style.color = "#666"; // Texto cinza escuro
+          }
+        });
+        
+        document.getElementById("Raiox").addEventListener("change", function () {
+          const isRaiox = this.value === "sim";
+          const gradPostoField = document.getElementById("gradPostoRaiox");
+          const tempoField = document.getElementById("TempoRaiox");
+      
+          if (isRaiox) {
+            gradPostoField.disabled = false;
+            gradPostoField.style.backgroundColor = "#add8e6"; // Mesma cor dos demais campos
+            gradPostoField.style.color = "black";
+            tempoField.disabled = false;
+            tempoField.style.backgroundColor = "#add8e6"; // Mesma cor dos demais campos
+            tempoField.style.color = "black";
+          } else {
+            gradPostoField.disabled = true;
+            gradPostoField.style.backgroundColor = "transparent"; // Torna o fundo transparente
+            gradPostoField.style.color = "#666"; // Texto cinza escuro
+            tempoField.disabled = true;
+            tempoField.style.backgroundColor = "transparent"; // Torna o fundo transparente
+            tempoField.style.color = "#666"; // Texto cinza escuro
+          }
+        });
+      </script>
+   </body>
+</html>

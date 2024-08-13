@@ -1,0 +1,57 @@
+regras da gret:
+
+1 - Data de aquisição antes de 09/06/2008: 
+5% por ano de serviço, sem limites indepentente de posto ou graduação.
+
+2 - Data de aquisição de 09/06/2008 a 26/10/2020 c/ data de exclusão anterior a 01/01/2022 
+c/ "Inatividade:" = "RESERVA REMUNERADA
+ou c/ "Inatividade:" = "REFORMA" c/ "Reforma:" = "Art. 107, V c/ Art. 110, I" ou "Art. 107, V."; 
+Ou se "Inatividade:" = "RESERVA REMUNERADA EX-OFFÍCIO":
+5% por ano de serviço, com limites diferentes dependendo do posto ou graduação 
+Com limites diferentes dependendo do posto ou graduação e anos de serviço
+(soldado, cabo, 3 sargento, 2 sargento e 1 sargento, subtenente < 30 anos de serviço = 122,5%), 
+(subtenente > 30 anos de serviço, 2 tenente, 1 tenente, capitão < 30 anos de serviço = 150%), 
+( capitão > 30 anos de serviço, major, ten. cel. e coronel = 192,5%);
+
+3 - Data de aquisição posterior a 31/12/2021 c/ Data de exclusão de 09/06/2008 a 26/10/2020 
+c/ "Inatividade:" = "RESERVA REMUNERADA
+ou c/ "Inatividade:" = "REFORMA" c/ "Reforma:" = "Art. 107, V c/ Art. 110, I" ou "Art. 107, V."; 
+Ou se "Inatividade:" = "RESERVA REMUNERADA EX-OFFÍCIO":
+5% por ano de serviço, com limites diferentes dependendo do posto ou graduação 
+Com limites diferentes dependendo do posto ou graduação e anos de serviço
+(soldado, cabo, 3 sargento, 2 sargento e 1 sargento, subtenente < 30 anos de serviço = 122,5%), 
+(subtenente > 30 anos de serviço, 2 tenente, 1 tenente, capitão < 30 anos de serviço = 150%), 
+( capitão > 30 anos de serviço, major, ten. cel. e coronel = 192,5%);
+
+4 - Data de aquisição entre 31/12/2021 a 27/10/2020 c/ Data de exclusão de 09/06/2008 a 26/10/2020 
+c/ "Inatividade:" = "RESERVA REMUNERADA
+ou c/ "Inatividade:" = "REFORMA" c/ "Reforma:" = "Art. 107, V c/ Art. 110, I" ou "Art. 107, V."; 
+Ou se "Inatividade:" = "RESERVA REMUNERADA EX-OFFÍCIO":
+5% por ano de serviço, com limites diferentes dependendo do posto ou graduação 
+Com limites diferentes dependendo do posto ou graduação e anos de serviço
+(soldado, cabo, 3 sargento, 2 sargento e 1 sargento, subtenente < 30 anos de serviço = 122,5%), 
+(subtenente > 30 anos de serviço, 2 tenente, 1 tenente, capitão < 30 anos de serviço = 150%), 
+( capitão > 30 anos de serviço, major, ten. cel. e coronel = 192,5%);
+
+5 - Data de aquisição posterior a 31/12/2021 c/ Data de exclusão de 27/10/2020 a 31/12/2021 
+c/ "Inatividade:" = "RESERVA REMUNERADA
+ou c/ "Inatividade:" = "REFORMA" c/ "Reforma:" = "Art. 107, V c/ Art. 110, I" ou "Art. 107, V."; 
+Ou se "Inatividade:" = "RESERVA REMUNERADA EX-OFFÍCIO":
+5% por ano de tempo de serviço militar, ou seja, 
+tempo cbmerj + tempo de serviço militar. 
+Com limites diferentes dependendo do posto ou graduação e anos de serviço
+(soldado, cabo, 3 sargento, 2 sargento e 1 sargento, subtenente < 30 anos de serviço = 122,5%), 
+(subtenente > 30 anos de serviço, 2 tenente, 1 tenente, capitão < 30 anos de serviço = 150%), 
+( capitão > 30 anos de serviço, major, ten. cel. e coronel = 192,5%);
+
+6 - Porém, se a data de exclusão for superior a 01/01/2022: 
+Percentual fixo 
+(soldado, cabo, 3 sargento, 2 sargento, 1 sargento, subtenente, 2 tenente, 1 tenente e capitão, = 150%), 
+(major, ten. cel. e coronel = 192,5%).
+
+7 - Se "Inatividade:" = "REFORMA" c/ "Reforma:" = "Art. 107, I, II, III, IV." 
+c/ data de exclusão anterior 01/01/2022:
+Percentual fix, dependendo do posto ou graduação 
+(soldado, cabo= 122,5%), 
+(3 sargento, 2 sargento, 1 sargento, subtenente, 2 tenente, 1 tenente, capitão < 30 anos = 150%), 
+(capitão > 30 anos, major, ten. cel. e coronel = 192,5%)

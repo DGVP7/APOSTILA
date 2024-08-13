@@ -1,0 +1,8 @@
+sites:
+https://www.tcerj.tc.br/consulta-processo/Processo
+https://intranet.cbmerj.rj.gov.br/
+https://sei.rj.gov.br/sip/login.php?sigla_orgao_sistema=ERJ&sigla_sistema=SEI&infra_url=L3NlaS8=
+https://www.cbmerj.rj.gov.br/dip/sistema/
+https://www.cbmerj.rj.gov.br/dgp/sistema/consulta.php
+https://www.sigrh.rj.gov.br
+https://www.tcerj.tc.br/etcerj/Home/Index?sicodiredirect=False
